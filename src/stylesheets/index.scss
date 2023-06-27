@@ -107,10 +107,10 @@ a {
 	opacity: 0;
 	transform: translate(0, -32px);
 	transition: all 500ms 600ms ease-in-out;
+}
 
-	.dypa-logo {
-		width: 120px;
-	}
+.dypa-logo {
+	width: 120px;
 }
 
 // Header
@@ -240,6 +240,15 @@ a {
 				height: calc(100vh - 140px);
 			}
 		}
+	}
+
+	.dypa-link {
+		top: 24px;
+		left: 24px;
+	}
+
+	.dypa-logo {
+		width: 64px;
 	}
 
 	.footer {
