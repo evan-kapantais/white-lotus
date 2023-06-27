@@ -18,6 +18,9 @@ const IndexPage = () => {
 
   return (
     <>
+      <a href="https://www.dypa.gov.gr/" rel="nofollow" className="dypa-link">
+        <StaticImage src="../images/dypa.jpg" aria-label="dypa logo" alt="dypa logo" class="dypa-logo" />
+      </a>
       <header className="header">
         <div className="logo-container">
           <StaticImage src='../images/logo_white.png' alt='white lotus logo' class="logo" />

@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `white_lotus`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `White Lotus Properties`,
+    siteUrl: `https://www.wihtelotusproperties.gr`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
