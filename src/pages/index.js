@@ -23,16 +23,16 @@ const IndexPage = () => {
       </a>
       <header className="header">
         <div className="logo-container">
-          <StaticImage src='../images/logo_white.png' alt='white lotus logo' class="logo" />
+          <StaticImage src='../images/logo_white.png' aria-label="white lotus logo" alt='white lotus logo' class="logo" />
           <p>Timeless Elegance • Charming Hospitality</p>
         </div>
         <div className="tinos-container">
-          <StaticImage src='../images/tinos.svg' alt='tinos outline' class="tinos" />
+          <StaticImage src='../images/tinos.svg' aria-label="tinos outline image" alt='tinos outline' class="tinos" />
           <p>Tinos, Greece</p>
         </div>
       </header>
       <main style={pageStyles}>
-        <StaticImage src='../images/laura-adai-Q0CpvfLpToQ-unsplash.jpg' alt='island beach' class="background-image" />
+        <StaticImage src='../images/laura-adai-Q0CpvfLpToQ-unsplash.jpg' alt='' class="background-image" />
         <div className="brand-container">
           <h1>White Lotus</h1>
           <p>Luxury Properties</p>
@@ -43,10 +43,10 @@ const IndexPage = () => {
       <footer className="footer">
         <div className="platforms">
           <a href="https://airbnb.com" className="platform-link">
-            <StaticImage src="../images/airbnb.png" alt="airbnb logo" class="platform-image airbnb" />
+            <StaticImage src="../images/airbnb.png" aria-label="airbnb logo" alt="airbnb logo" class="platform-image airbnb" />
           </a>
           <a href="https://booking.com" className="platform-link">
-            <StaticImage src="../images/bookingcom.svg" alt="booking.com logo" class="platform-image booking" />
+            <StaticImage src="../images/bookingcom.svg" aria-label="booking.com logo" alt="booking.com logo" class="platform-image booking" />
           </a>
         </div>
         <a href="mailto:whitelotuspropertymanagement@gmail.com" className="mail-link">whitelotuspropertymanagement@gmail.com</a>
