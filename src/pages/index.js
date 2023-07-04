@@ -41,14 +41,6 @@ const IndexPage = () => {
           We will be with you shortly.</p>
       </main>
       <footer className="footer">
-        <div className="platforms">
-          <a href="https://airbnb.com" className="platform-link">
-            <StaticImage src="../images/airbnb.png" aria-label="airbnb logo" alt="airbnb logo" class="platform-image airbnb" />
-          </a>
-          <a href="https://booking.com" className="platform-link">
-            <StaticImage src="../images/bookingcom.svg" aria-label="booking.com logo" alt="booking.com logo" class="platform-image booking" />
-          </a>
-        </div>
         <a href="mailto:whitelotuspropertymanagement@gmail.com" className="mail-link">whitelotuspropertymanagement@gmail.com</a>
       </footer>
     </>
