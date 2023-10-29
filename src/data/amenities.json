@@ -1,0 +1,40 @@
+{
+  "white_lotus": {
+    "details": [
+      "Entire Property",
+      "49 sq. m.",
+      "Non-smoking",
+      "Pet Friendly",
+      "Large Veranda",
+      "Spacious Balcony"
+    ],
+    "amenities": [
+      "Sea View",
+      "Parking Space",
+      "Air Conditioning",
+      "Free Wifi",
+      "Streaming Services",
+      "Secured Locker",
+      "Heating"
+    ]
+  },
+  "brown_lotus": {
+    "details": [
+      "Entire Property",
+      "49 sq. m.",
+      "Non-smoking",
+      "Pet Friendly",
+      "Large Veranda",
+      "Spacious Balcony"
+    ],
+    "amenities": [
+      "Sea View",
+      "Parking Space",
+      "Air Conditioning",
+      "Free Wifi",
+      "Streaming Services",
+      "Secured Locker",
+      "Heating"
+    ]
+  }
+}

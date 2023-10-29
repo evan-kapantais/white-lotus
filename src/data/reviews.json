@@ -1,0 +1,30 @@
+[
+  {
+    "author": "Anna",
+    "color": "#79E5BF",
+    "target_property": "Brown Lotus",
+    "rating": 5,
+    "content": "The location is excellent at a very short distance from Triantaros (walking distance) with a nice view. Very neat and tasteful construction."
+  },
+  {
+    "author": "Ioannis",
+    "color": "#FFF973",
+    "target_property": "White Lotus",
+    "rating": 5,
+    "content": "It was very clean and had everything you needed. The owners are very helpful and kind."
+  },
+  {
+    "author": "Julia",
+    "color": "#B0E5FC",
+    "target_property": "White Lotus",
+    "rating": 5,
+    "content": "The little one-bedroom villa is new, well equipped with a large terrace and beautiful view of the port in the distance."
+  },
+  {
+    "author": "Mirsini",
+    "color": "#FCB0D5",
+    "target_property": "White Lotus",
+    "rating": 5,
+    "content": "One of the best places we've stayed in! All the amenities one could ask for! Great view, great outdoor seating, fully equipped kitchen, comfortable bed, fluffy towels, first aid kit, wet wipes and the list goes on and on!"
+  }
+]
