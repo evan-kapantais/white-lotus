@@ -1,52 +1,150 @@
 import * as React from "react";
-import '../stylesheets/index.scss';
-
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
-const pageStyles = {
-  color: "#232129",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  height: '100%'
-};
+import Layout from "../components/Layout";
+import Reviews from "../components/Reviews";
+
+import Icon from "../icons/arrow.svg";
 
 const IndexPage = () => {
-  React.useEffect(() => {
-    setTimeout(() => {
-      document.body.classList.add('loaded');
-    }, 200);
-  }, []);
-
   return (
-    <>
-      <a href="https://www.dypa.gov.gr/" rel="nofollow" className="dypa-link">
-        <StaticImage src="../images/dypa.jpg" aria-label="dypa logo" alt="dypa logo" class="dypa-logo" />
-      </a>
-      <header className="header">
-        <div className="logo-container">
-          <StaticImage src='../images/logo_white.png' aria-label="white lotus logo" alt='white lotus logo' class="logo" />
-          <p>Timeless Elegance • Charming Hospitality</p>
+    <Layout>
+      <section className="banner-section">
+        <StaticImage
+          src="../images/properties/white_lotus/white_lotus_2.jpg"
+          alt="white lotus exterior image"
+          loading="eager"
+          layout="fullWidth"
+        />
+      </section>
+      <section className="quote-section">
+        <div className="quote-wrapper">
+          <p>
+            Experience the odyssey of elevated living with White Lotus. <br />
+            Where Cycladic serenity meets unique property management.
+          </p>
         </div>
-        <div className="tinos-container">
-          <StaticImage src='../images/tinos.svg' aria-label="tinos outline image" alt='tinos outline' class="tinos" />
-          <p>Tinos, Greece</p>
+        <StaticImage
+          src="../images/general/general_0.jpg"
+          alt="white lotus exterior view"
+          className="image-wrapper exterior-image"
+          layout="fullWidth"
+        />
+        <StaticImage
+          src="../images/properties/brown_lotus/brown_lotus_8.jpg"
+          alt="brown lotus bathroom view"
+          className="image-wrapper bathroom-image"
+          layout="fullWidth"
+        />
+      </section>
+      <section className="about-section">
+        <div className="details">
+          <h2 className="section-heading">About Us</h2>
+          <p>
+            White Lotus is a property management company established in 2022
+            that specialises in property management in the tactical locations of
+            Athens, Tinos and Arachova.
+          </p>
+          <p>
+            Providing a holistic package from hosting services and OTA
+            channelling (AirBnb, Booking, Vrbo, Agoda), to property management.
+            Using top notch technology, White Lotus seeks to provide  elevated
+            services to its clientele.
+          </p>
         </div>
-      </header>
-      <main style={pageStyles}>
-        <StaticImage src='../images/laura-adai-Q0CpvfLpToQ-unsplash.jpg' alt='' class="background-image" />
-        <div className="brand-container">
-          <h1>White Lotus</h1>
-          <p>Luxury Properties</p>
+        <div className="image-wrapper">
+          <StaticImage
+            src="../images/general/acropolis.jpg"
+            alt="side view of the Parthenon"
+          />
         </div>
-        <p className="disclaimer">Our brand new website is under construction.<br />
-          We will be with you shortly.</p>
-      </main>
-      <footer className="footer">
-        <a href="mailto:whitelotuspropertymanagement@gmail.com" className="mail-link">whitelotuspropertymanagement@gmail.com</a>
-      </footer>
-    </>
+      </section>
+      <section className="properties-section">
+        <div className="details">
+          <h2 className="section-heading">Our Properties</h2>
+          <p>
+            Adding modern touches to the Tinian traditional architecture and
+            exploiting the surrounding space to blend the past with the needs of
+            the present, each one of our handpicked properties offers an
+            unparalleled travel experience.
+          </p>
+          <Link to="/properties" className="page-link">
+            explore our properties
+            <Icon />
+          </Link>
+        </div>
+        <div className="gallery">
+          <StaticImage
+            src="../images/properties/white_lotus/white_lotus_1.jpg"
+            alt="white lotus interior"
+            layout="fullWidth"
+          />
+          <StaticImage
+            src="../images/properties/white_lotus/white_lotus_2.jpg"
+            alt="white lotus interior"
+            layout="fullWidth"
+          />
+          <StaticImage
+            src="../images/properties/white_lotus/white_lotus_3.jpg"
+            alt="white lotus interior"
+            layout="fullWidth"
+          />
+          <StaticImage
+            src="../images/properties/white_lotus/white_lotus_4.jpg"
+            alt="white lotus interior"
+            layout="fullWidth"
+          />
+          <StaticImage
+            src="../images/properties/white_lotus/white_lotus_5.jpg"
+            alt="white lotus interior"
+            layout="fullWidth"
+          />
+        </div>
+      </section>
+      <section className="deco-image-section">
+        <StaticImage
+          src="../images/general/beach.jpg"
+          alt="beach with straw umbrellas"
+          layout="fullWidth"
+        />
+      </section>
+      <section className="reviews-section">
+        <div className="text-wrapper">
+          <p>
+            Whether you seek astonishing views or cosy and lean spaces, White
+            Lotus delivers the best value to both owners and guests
+          </p>
+        </div>
+        <div className="reviews-wrapper">
+          <Reviews />
+        </div>
+      </section>
+      <section className="contact-section">
+        <div className="details">
+          <h2 className="section-heading">Need more details?</h2>
+          <p>
+            Don't hesitate to rach us through email at <br />
+            <a href="mailto:whitelotuspropertymanagement@gmail.com">
+              <strong>whitelotuspropertymanagement@gmail.com</strong>
+            </a>
+          </p>
+          <Link to="/contact" className="page-link">
+            contact page
+            <Icon />
+          </Link>
+        </div>
+        <div className="image-wrapper">
+          <StaticImage
+            src="../images/general/church.jpg"
+            alt="a church on a Greek island"
+          />
+        </div>
+      </section>
+    </Layout>
   );
 };
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>White Lotus</title>;
