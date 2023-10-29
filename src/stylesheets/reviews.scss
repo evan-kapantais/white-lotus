@@ -1,0 +1,56 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  font-size: var(--font-size-medium);
+
+  .review {
+    max-width: 550px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--spacing-xlarge);
+    }
+
+    .left {
+      display: flex;
+      gap: var(--spacing-small);
+      align-items: center;
+    }
+
+    .avatar {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: #79e5bf;
+    }
+
+    .author-name {
+      margin-bottom: var(--spacing-xsmall);
+    }
+
+    .target-property {
+      font-size: var(--font-size-small);
+      color: var(--color-text-weak);
+
+      strong {
+        color: initial;
+      }
+    }
+
+    .rating {
+      font-size: 0;
+      display: flex;
+      gap: var(--spacing-xsmall);
+    }
+
+    .body {
+      line-height: 150%;
+    }
+  }
+}

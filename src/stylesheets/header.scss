@@ -1,0 +1,33 @@
+.site-header {
+  position: relative;
+  padding: var(--spacing-xlarge) var(--spacing-xxxlarge);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-brand {
+    font-family: "Cormorant", serif;
+    color: var(--color-text-strongest);
+  }
+
+  .logo-link {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+  }
+
+  @media (max-width: 600px) {
+    padding: var(--spacing-xlarge);
+
+    .header-brand {
+      font-size: var(--font-size-medium);
+    }
+
+    .logo-link {
+      width: 32px;
+    }
+  }
+}
