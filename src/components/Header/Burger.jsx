@@ -4,7 +4,10 @@ import Icon from "../../icons/burger.svg";
 
 const Burger = () => {
   return (
-    <button className="menu-button js-menu-button">
+    <button
+      className="menu-button js-menu-button"
+      aria-label="menu burger button"
+    >
       <Icon />
     </button>
   );

@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Reviews from "../components/Reviews";
 
 import Icon from "../icons/arrow.svg";
+import HeadContent from "../components/HeadContent";
 
 const IndexPage = () => {
   return (
@@ -147,4 +148,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>White Lotus</title>;
+export const Head = () => <HeadContent title="White Lotus" />;

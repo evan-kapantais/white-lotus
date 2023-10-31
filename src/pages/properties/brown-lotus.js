@@ -11,6 +11,7 @@ import Check from "../../icons/check.svg";
 import Carousel from "../../utils/carousel";
 
 import data from "../../data/amenities.json";
+import HeadContent from "../../components/HeadContent";
 
 const BrownLotusPage = () => {
   const [loaded, setLoaded] = useState(false);
@@ -176,4 +177,4 @@ const BrownLotusPage = () => {
 
 export default BrownLotusPage;
 
-export const Head = () => <title>White Lotus Villa</title>;
+export const Head = () => <HeadContent title="Brown Lotus" />;

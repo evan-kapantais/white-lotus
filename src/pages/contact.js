@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import HeadContent from "../components/HeadContent";
 
 const ContactPage = () => {
   return (
@@ -21,4 +22,4 @@ const ContactPage = () => {
 
 export default ContactPage;
 
-export const Head = () => <title>Contact</title>;
+export const Head = () => <HeadContent title="Contact" />;

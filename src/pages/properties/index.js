@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import Icon from "../../icons/map-pin.svg";
 
 import Layout from "../../components/Layout";
+import HeadContent from "../../components/HeadContent";
 
 const PropertiesPage = () => {
   return (
@@ -61,4 +62,4 @@ const PropertiesPage = () => {
 
 export default PropertiesPage;
 
-export const Head = () => <title>Properties</title>;
+export const Head = () => <HeadContent title="Properties" />;

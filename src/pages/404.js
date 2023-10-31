@@ -1,12 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import HeadContent from "../components/HeadContent";
 
 const pageStyles = {
   color: "#232129",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  background: '#fff',
-  height: '100vh'
+  background: "#fff",
+  height: "100vh",
 };
 const headingStyles = {
   marginTop: 0,
@@ -48,4 +49,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>;
+export const Head = () => <HeadContent title="Not Found" />;

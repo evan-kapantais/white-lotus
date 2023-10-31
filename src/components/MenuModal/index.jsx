@@ -13,7 +13,11 @@ const menuItems = [
 const MenuModal = () => {
   return (
     <div className="menu js-menu">
-      <button type="button" className="close-button js-close-button">
+      <button
+        type="button"
+        aria-label="menu close button"
+        className="close-button js-close-button"
+      >
         <Icon />
       </button>
       <StaticImage
