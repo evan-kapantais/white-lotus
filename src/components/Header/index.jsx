@@ -7,9 +7,12 @@ import Burger from "./Burger";
 const Header = () => {
   return (
     <header id="site-header" className="site-header js-site-header">
-      <h1 className="header-brand">
-        <Link to="/">White Lotus</Link>
-      </h1>
+      <StaticImage
+        src="../../images/dypa.jpg"
+        aria-label="dypa logo"
+        alt="dypa logo"
+        class="dypa-logo"
+      />
       <Link to="/" className="logo-link">
         <StaticImage
           src="../../images/logo_blue.png"
@@ -17,6 +20,7 @@ const Header = () => {
           alt="white lotus logo"
           class="logo"
         />
+        <h1>White Lotus</h1>
       </Link>
       <Burger />
     </header>
