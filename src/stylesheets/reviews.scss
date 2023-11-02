@@ -11,6 +11,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: var(--spacing-xlarge);
+      flex-wrap: wrap;
       margin-bottom: var(--spacing-xlarge);
     }
 

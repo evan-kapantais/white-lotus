@@ -299,6 +299,7 @@ ul {
       justify-content: center;
       align-items: center;
       font-size: var(--font-size-medium);
+      padding-inline: var(--spacing-xlarge);
     }
 
     .section-heading {
@@ -309,6 +310,10 @@ ul {
       color: var(--color-text-strong);
       line-height: 150%;
       margin-bottom: 120px;
+    }
+
+    .mail-link {
+      word-break: break-all;
     }
 
     .gatsby-image-wrapper {
@@ -415,6 +420,10 @@ ul {
     .contact-section {
       justify-content: center;
       width: 100%;
+
+      > div {
+        width: 100%;
+      }
 
       .image-wrapper {
         display: none;

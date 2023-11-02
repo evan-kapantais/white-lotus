@@ -125,8 +125,11 @@ const IndexPage = () => {
         <div className="details">
           <h2 className="section-heading">Need more details?</h2>
           <p>
-            Don't hesitate to rach us through email at <br />
-            <a href="mailto:whitelotuspropertymanagement@gmail.com">
+            Don't hesitate to reach us through email at <br />
+            <a
+              href="mailto:whitelotuspropertymanagement@gmail.com"
+              className="mail-link"
+            >
               <strong>whitelotuspropertymanagement@gmail.com</strong>
             </a>
           </p>

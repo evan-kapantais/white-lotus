@@ -4,4 +4,11 @@
   align-items: center;
   padding: var(--spacing-xxlarge) var(--spacing-xxxlarge);
   background: var(--color-background-accent-gold);
+
+  @media (max-width: 760px) {
+    padding-inline: var(--spacing-xlarge);
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-medium);
+  }
 }
