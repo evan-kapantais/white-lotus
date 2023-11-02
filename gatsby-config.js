@@ -24,12 +24,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-sharp",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
+    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
