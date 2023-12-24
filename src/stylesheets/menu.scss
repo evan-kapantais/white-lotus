@@ -9,7 +9,7 @@
   color: var(--color-text-strongest);
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: var(--spacing-xxlarge);
   align-items: center;
   justify-content: center;
   z-index: 99;
@@ -22,34 +22,22 @@
   .close-button {
     position: absolute;
     top: var(--spacing-xlarge);
-    right: var(--spacing-xxxlarge);
+    right: var(--spacing-large);
   }
 
   .logo {
-    width: 64px;
+    width: 48px;
   }
 
   .menu-list {
     list-style: none;
     display: flex;
-    gap: var(--spacing-xxlarge);
+    gap: var(--spacing-large);
   }
 
   .menu-link {
     font-size: var(--font-size-xlarge);
     font-family: "Cormorant", sans-serif;
     font-weight: 300;
-  }
-
-  @media (max-width: 600px) {
-    .menu-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .menu-link {
-      font-size: var(--font-size-large);
-    }
   }
 }

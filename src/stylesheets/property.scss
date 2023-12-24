@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     color: var(--color-text-strong);
     line-height: 130%;
     padding: var(--spacing-xlarge);
@@ -101,7 +101,7 @@
     }
 
     .amenities-list-item {
-      font-size: var(--font-size-medium);
+      font-size: var(--font-size-large);
 
       &:not(:last-of-type) {
         margin-bottom: var(--spacing-large);
