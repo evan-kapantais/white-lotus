@@ -163,13 +163,16 @@
 }
 
 .big-cursor {
-  position: fixed !important;
   top: 0;
-  display: none !important;
   z-index: 999;
   pointer-events: none;
 
-  &.active {
-    display: block;
+  &.gatsby-image-wrapper {
+    position: fixed;
+    display: none;
+
+    &.active {
+      display: block;
+    }
   }
 }
