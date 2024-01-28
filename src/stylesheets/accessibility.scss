@@ -168,11 +168,11 @@
   pointer-events: none;
 
   &.gatsby-image-wrapper {
-    position: fixed;
     display: none;
+  }
 
-    &.active {
-      display: block;
-    }
+  &.active {
+    position: fixed;
+    display: block;
   }
 }
