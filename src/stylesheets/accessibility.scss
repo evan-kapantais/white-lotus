@@ -163,9 +163,9 @@
 }
 
 .big-cursor {
-  position: fixed;
+  position: fixed !important;
   top: 0;
-  display: none;
+  display: none !important;
   z-index: 999;
   pointer-events: none;
 
