@@ -40,7 +40,7 @@
 
   .text-link {
     h1 {
-      font-family: "Cormorant", serif;
+      font-family: var(--font-family-serif);
       font-weight: 300;
       color: var(--color-text-strongest);
       white-space: nowrap;
@@ -63,7 +63,7 @@
     ul {
       li {
         display: inline;
-        font-size: 18px;
+        font-size: var(--font-size-medium);
         margin-left: var(--spacing-small);
       }
     }
