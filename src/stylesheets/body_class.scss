@@ -1,0 +1,164 @@
+// All following classes are applied to the body element
+
+// Content
+
+.highlight-links {
+  a {
+    width: fit-content;
+    outline: 2px solid blue;
+    outline-offset: 2px;
+  }
+}
+
+.letter-spacing {
+  * {
+    &:not(.acc-menu *) {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.line-height {
+  .acc-menu {
+    * {
+      line-height: normal;
+    }
+  }
+
+  * {
+    line-height: 2;
+  }
+}
+
+.font-weight {
+  .acc-menu {
+    * {
+      font-weight: normal;
+    }
+  }
+  * {
+    font-weight: bold;
+  }
+}
+
+.highlight-title {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    outline: 2px solid blue;
+  }
+}
+
+.dyslexia-font {
+  font-family: "opendyslexic3regular", comic-sans;
+}
+
+// Colours
+
+.dark-contrast {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background: #000;
+    color: #fff;
+  }
+
+  .acc-menu {
+    * {
+      color: initial;
+      background: initial;
+    }
+
+    .font-adjustment-button {
+      background: var(--color-text-link);
+      color: #fff;
+    }
+
+    .acc-action-button {
+      background: #fff;
+
+      &.active {
+        background: var(--color-text-link);
+      }
+    }
+  }
+}
+
+.light-contrast {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background: #fff;
+    color: #000;
+  }
+
+  .acc-menu {
+    * {
+      color: initial;
+      background: initial;
+    }
+
+    .font-adjustment-wrapper {
+      background: #fff;
+    }
+
+    .font-adjustment-button {
+      background: var(--color-text-link);
+      color: #fff;
+    }
+
+    .acc-action-button {
+      background: #fff;
+
+      &.active {
+        background: var(--color-text-link);
+      }
+    }
+  }
+}
+
+.high-contrast {
+  filter: contrast(1.5);
+}
+
+.low-saturation {
+  filter: saturate(0.5);
+}
+
+.high-saturation {
+  filter: saturate(2);
+}
+
+.monochrome {
+  filter: grayscale(1);
+}
+
+// Tools
+
+.stop-animations {
+  * {
+    transition: none !important;
+  }
+}
+
+.has-big-cursor {
+  cursor: none;
+
+  button,
+  a {
+    cursor: none;
+  }
+}
