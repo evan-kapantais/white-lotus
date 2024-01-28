@@ -18,3 +18,5 @@ import "./src/stylesheets/header.scss";
 import "./src/stylesheets/footer.scss";
 import "./src/stylesheets/menu.scss";
 import "./src/stylesheets/reviews.scss";
+import "./src/stylesheets/accessibility.scss";
+import "./src/stylesheets/body_class.scss";

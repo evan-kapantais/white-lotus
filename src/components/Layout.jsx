@@ -5,6 +5,10 @@ import Footer from "./Footer";
 import MenuModal from "./MenuModal";
 
 import Menu from "../utils/menu";
+import AccessibilityWidget from "./AccessibilityWidget";
+import AccessibilityMenu from "./AccessibilityWidget/Menu";
+import Widget from "../plugins/accessibility_widget";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Layout = ({ id, className, children }) => {
   const [loaded, setLoaded] = useState(false);
@@ -12,11 +16,11 @@ const Layout = ({ id, className, children }) => {
 
   useEffect(() => {
     setLoaded(true);
+    new Widget();
   }, []);
 
   useEffect(() => {
     if (loaded) new Menu();
-
     if (!window) return;
 
     const { pathname } = window.location;
@@ -29,6 +33,13 @@ const Layout = ({ id, className, children }) => {
       <Header />
       <main id={`${pageId}-page`} className={className}>
         {children}
+        <AccessibilityWidget />
+        <AccessibilityMenu />
+        <StaticImage
+          src="../icons/pointer.svg"
+          alt="big cursor"
+          class="big-cursor js-big-cursor"
+        />
       </main>
       <Footer />
       <MenuModal />
