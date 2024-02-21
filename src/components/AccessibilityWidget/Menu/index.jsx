@@ -1,6 +1,8 @@
 import React from "react";
 import { optionGroups } from "./options";
 import { StaticImage } from "gatsby-plugin-image";
+import { getAccessibilityIcon } from "../../../helpers/icon_helpers";
+import FontAdjustment from "./FontAdjustment";
 
 const Menu = () => {
   const formatOptionName = (name) => name.replace("-", " ");
@@ -20,35 +22,6 @@ const Menu = () => {
       </header>
 
       <div className="acc-menu-content">
-        {/* TODO: implement this */}
-
-        {/* <section className="acc-menu-section">
-          <h3 className="section-title">Language</h3>
-          <select name="language" id="language" className="language-input">
-            <option value="en">English</option>
-            <option value="gr">Greek</option>
-          </select>
-        </section> */}
-
-        <section className="acc-menu-section">
-          <h3 className="section-title">Adjust Font Size</h3>
-          <div className="font-adjustment-wrapper">
-            <button
-              type="button"
-              className="font-adjustment-button js-font-adjust-button"
-              data-smaller
-            >
-              -
-            </button>
-            <p className="js-font-size">100%</p>
-            <button
-              type="button"
-              className="font-adjustment-button js-font-adjust-button"
-            >
-              +
-            </button>
-          </div>
-        </section>
         {optionGroups.map((group) => (
           <section
             key={group.name}
@@ -57,6 +30,7 @@ const Menu = () => {
           >
             <h3 className="section-title">{group.name}</h3>
             <ul className="options-list">
+              {group.name === "content" && <FontAdjustment />}
               {group.options.map((option) => (
                 <li key={option.name} className="option">
                   <button
@@ -68,6 +42,7 @@ const Menu = () => {
                     data-adds-html-class={option.addsHtmlClass}
                     data-action={option.name}
                   >
+                    {getAccessibilityIcon(option.name)}
                     <span className="option-text">
                       {formatOptionName(option.name)}
                     </span>
