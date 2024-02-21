@@ -29,7 +29,9 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: fixed;
   // Button margin-bottom + height + outline + border + margin top
-  bottom: calc(32px + 48px + 7px + var(--spacing-large));
+  bottom: calc(
+    var(--spacing-xlarge) + var(--spacing-xxlarge) + 7px + var(--spacing-large)
+  );
   right: var(--spacing-xxxlarge);
   background: #fbfbfb;
   box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.1);
@@ -73,26 +75,40 @@
 
   .font-adjustment-wrapper,
   .option {
-    height: 80px;
-    border: 1px solid rgb(222, 222, 222);
+    border: 1px solid rgb(232, 232, 232);
     background: #fff;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   .font-adjustment-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-xsmall);
+  }
+
+  .font-adjustment-wrapper {
+    padding: var(--spacing-medium);
+    grid-column: 1 / -1;
+
+    .title-wrapper {
+      margin-bottom: var(--spacing-medium);
+    }
+
+    .controls-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .font-adjustment-button {
     font-size: 24px;
     background: var(--color-text-link);
-    height: 100%;
-    width: 60px;
+    height: 48px;
+    width: 48px;
     color: #fff;
-    border-radius: 2px;
+    border-radius: 50%;
+  }
+
+  .font-size {
+    font-variant-numeric: tabular-nums;
   }
 
   .acc-menu-section {
@@ -113,7 +129,8 @@
   }
 
   .option {
-    transition: all 300ms;
+    height: max-content;
+    transition: all 250ms;
 
     &:hover {
       border: 1px solid var(--color-text-link);
@@ -125,7 +142,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-medium);
+    gap: var(--spacing-small);
     text-transform: capitalize;
     letter-spacing: 0.5px;
     height: 100%;
@@ -142,7 +159,15 @@
       .option-text {
         color: #fff;
       }
+
+      .acc-option-icon {
+        filter: invert(1);
+      }
     }
+  }
+
+  .acc-option-icon {
+    pointer-events: none;
   }
 
   .option-text {
@@ -155,9 +180,11 @@
     height: 100vh;
     max-height: 100vh;
     inset: 0;
+    border-radius: 0;
+    box-shadow: none;
 
     .options-list {
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(162px, 1fr));
     }
   }
 }

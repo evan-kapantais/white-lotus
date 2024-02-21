@@ -21,6 +21,11 @@ module.exports = {
       options: {
         rule: {
           include: /icons/,
+          options: {
+            props: {
+              className: "acc-option-icon",
+            },
+          },
         },
       },
     },
