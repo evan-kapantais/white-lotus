@@ -1,4 +1,4 @@
-// All following classes are applied to the body element
+// The following classes are applied to either the body or document element
 
 // Content
 
@@ -66,9 +66,10 @@
   h3,
   h4,
   h5,
-  h6 {
-    background: #000;
-    color: #fff;
+  h6,
+  span {
+    background: #000 !important;
+    color: #fff !important;
   }
 
   .acc-menu {
@@ -134,12 +135,12 @@
   filter: contrast(1.5);
 }
 
-.low-saturation {
-  filter: saturate(0.5);
-}
-
 .high-saturation {
   filter: saturate(2);
+}
+
+.low-saturation {
+  filter: saturate(0.5);
 }
 
 .monochrome {
