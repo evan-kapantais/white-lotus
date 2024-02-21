@@ -38,11 +38,9 @@ export default class AccessibilityWidget {
 
   _toggleMenu() {
     this.menu.classList.toggle("active");
-    document.body.classList.toggle("modal-open");
   }
 
   _resetOptions() {
-    document.body.className = "modal-open";
     document.documentElement.removeAttribute("class");
     const activeButtons = this.menu.querySelectorAll(
       ".js-acc-action-button.active"
